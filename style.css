@@ -1,0 +1,126 @@
+@keyframes sb {
+	0%{ letter-spacing: -1px; }
+  50%{ letter-spacing: 1px; }
+  100%{ letter-spacing: -1px; }
+}
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+red {
+  color: red;
+}
+blue {
+  color: blue;
+}
+green {
+  color: green;
+}
+purple {
+  color: purple;
+}
+yellow {
+  color: yellow;
+}
+underline {
+	text-decoration: underline;
+}
+overline {
+	text-decoration: overline;
+}
+box {
+	border: 1px solid gray;
+}
+unfocus {
+ -webkit-user-select: none; 
+  -moz-user-select: none; 
+  -ms-user-select: none;
+  user-select: none;
+}
+sideways {
+	writing-mode: vertical-rl;
+}
+linev {
+	border-right: 1px solid gray;
+}
+squeezer {
+	animation: sb 1s infinite;
+}
+rtl {
+	  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+.popup .show {
+	 visibility: visible;
+	 -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+.dropb {
+	background-color: #f1f1f1;
+	border:none;
+	padding:16px;
+	font-size: 16px;
+}
+.test {
+	background-color: red;
+}
+.test-dc {
+	color: blue;
+}
+c::before {
+	content: "(censored)";
+}
+.b3 {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.b3:hover {background-color: #3e8e41}
+
+.b3:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
