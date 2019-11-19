@@ -3,7 +3,7 @@
 	This will NOT work in certain browsers such as IE. Some elements may not work with: Microsoft Edge, Safari.
 */
 //Add HE css to make some elements function
-document.body.innerHTML = "<link rel='stylesheet' href=''>"+document.body.innerHTML;
+document.body.innerHTML = "<link rel='stylesheet' href='https://raw.githubusercontent.com/mcneb10/HE/master/style.css'>"+document.body.innerHTML;
 function createTagWithJS(name, func) {
 	document.createElement(name);
 	var ti = document.getElementsByTagName(name);
